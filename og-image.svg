@@ -1,0 +1,63 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#0A0E1B"/>
+  
+  <!-- Subtle Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1D2434" stroke-width="0.5"/>
+    </pattern>
+    
+    <!-- Glow Filter for Ember Text -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#grid)" opacity="0.3"/>
+  
+  <!-- Decorative Archaeological Lines -->
+  <line x1="100" y1="150" x2="400" y2="150" stroke="#A1824A" stroke-width="2" opacity="0.4"/>
+  <line x1="800" y1="480" x2="1100" y2="480" stroke="#A1824A" stroke-width="2" opacity="0.4"/>
+  
+  <!-- Main Title -->
+  <text x="600" y="260" font-family="'Inter', sans-serif" font-size="72" font-weight="700" letter-spacing="12" text-anchor="middle" fill="#F8F7F4">
+    UNEARTH
+  </text>
+  
+  <text x="600" y="340" font-family="'Inter', sans-serif" font-size="72" font-weight="700" letter-spacing="12" text-anchor="middle" fill="#FF8A00" filter="url(#glow)">
+    .CLICK
+  </text>
+  
+  <!-- Tagline -->
+  <text x="600" y="410" font-family="'Inter', sans-serif" font-size="20" letter-spacing="6" text-anchor="middle" fill="#8E8E8E" opacity="0.8">
+    CONSTELLATION HUB
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="450" font-family="'Inter', sans-serif" font-size="16" letter-spacing="2" text-anchor="middle" fill="#90cdf4" opacity="0.6">
+    MAPPING THE DIGITAL STRATA
+  </text>
+  
+  <!-- Decorative Dots (constellation visual) -->
+  <circle cx="300" cy="200" r="3" fill="#FF8A00" opacity="0.6"/>
+  <circle cx="350" cy="180" r="2" fill="#90cdf4" opacity="0.5"/>
+  <circle cx="380" cy="220" r="2.5" fill="#A1824A" opacity="0.5"/>
+  <line x1="300" y1="200" x2="350" y2="180" stroke="#FF8A00" stroke-width="1" opacity="0.3"/>
+  <line x1="350" y1="180" x2="380" y2="220" stroke="#FF8A00" stroke-width="1" opacity="0.3"/>
+  
+  <circle cx="900" cy="400" r="3" fill="#FF8A00" opacity="0.6"/>
+  <circle cx="850" cy="420" r="2" fill="#90cdf4" opacity="0.5"/>
+  <circle cx="820" cy="380" r="2.5" fill="#A1824A" opacity="0.5"/>
+  <line x1="900" y1="400" x2="850" y2="420" stroke="#FF8A00" stroke-width="1" opacity="0.3"/>
+  <line x1="850" y1="420" x2="820" y2="380" stroke="#FF8A00" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Footer Credit -->
+  <text x="600" y="580" font-family="monospace" font-size="12" letter-spacing="1" text-anchor="middle" fill="#8E8E8E" opacity="0.5">
+    ARCHIVE &amp; ANVIL — UNEARTH HERITAGE FOUNDRY
+  </text>
+</svg>

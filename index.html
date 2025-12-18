@@ -1,106 +1,386 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>unearth.click</title>
-    <meta name="description" content="A digital artifact from unearth.im. A link is a promise. A click is an act of trust.">
 
-    <!-- SEO & Open Graph Tags -->
-    <meta property="og:title" content="unearth.click">
-    <meta property="og:description" content="A digital artifact from unearth.im. A link is a promise. A click is an act of trust.">
-    <meta property="og:image" content="https://placehold.co/1200x630/F8F7F4/2E2E2E?text=unearth.click">
-    <meta property="og:url" content="https://unearth.click">
-    <meta property="og:type" content="website">
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="unearth.click">
-    <meta name="twitter:description" content="A digital artifact from unearth.im. A link is a promise. A click is an act of trust.">
-    <meta name="twitter:image" content="https://placehold.co/1200x630/F8F7F4/2E2E2E?text=unearth.click">
-    
-    <meta name="robots" content="index, follow">
-
-    <!-- Typography (Lora for Serif/Narrative, Inter for Sans/UI) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-
-    <!-- Tailwind v3.4.1 -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- unearth.im Standard Configuration (Earth & Ink Palette) -->
-    <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            // 'Earth & Ink' Palette (Light Mode)
-            'background': '#F8F7F4', // Off-White
-            'text': '#2E2E2E',       // Charcoal
-            'accent-primary': '#A95C3D', // Burnt Sienna
-            'accent-secondary': '#5A7D8C', // Slate Blue
+    <!-- === Schema.org JSON-LD === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": "https://unearth.click/#content",
+          "url": "https://unearth.click",
+          "name": "Unearth Constellation Hub",
+          "description": "The authoritative directory for the Unearth Heritage Foundry constellation. A navigational nexus mapping the digital strata of our distributed knowledge graph.",
+          "inLanguage": "en-US",
+          "datePublished": "2024-01-01",
+          "publisher": { "@id": "https://unearth.im/#organization" },
+          "isPartOf": { "@id": "https://unearth.click/#website" },
+          "author": [
+            { "@id": "https://josiest.com/#person" },
+            { "@id": "https://felixvelas.co/#person" }
+          ],
+          "hasPart": [
+            { "@id": "https://unearth.im/#website" },
+            { "@id": "https://apricity.im/#website" },
+            { "@id": "https://noospheria.im/#website" },
+            { "@id": "https://felixvelas.co/#website" },
+            { "@id": "https://josiest.com/#website" }
+          ],
+          "relatedLink": [
+            "https://sentientification.com",
+            "https://archaeobytology.org"
+          ]
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://unearth.click/#website",
+          "url": "https://unearth.click",
+          "name": "Unearth Constellation Hub",
+          "publisher": { "@id": "https://unearth.im/#organization" }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://unearth.im/#organization",
+          "name": "Unearth Heritage Foundry",
+          "alternateName": ["Unearth Foundry", "Archive & Anvil"],
+          "url": "https://unearth.im",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://unearth.im/favicon-32x32.png"
           },
-          fontFamily: {
-            // 'The Manuscript & The Interface' Typography
-            'serif': ['Lora', 'serif'],
-            'sans': ['Inter', 'sans-serif'],
-          }
+          "foundingDate": "2024",
+          "sameAs": [
+            "https://twitter.com/unearthim",
+            "https://github.com/unearthim"
+          ]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://josiest.com/#person",
+          "name": "Josie Jefferson",
+          "url": "https://josiest.com",
+          "jobTitle": "Digital Archaeologist & Trust Architect",
+          "affiliation": { "@id": "https://unearth.im/#organization" },
+          "sameAs": ["https://notjojo.im"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://felixvelas.co/#person",
+          "name": "Felix Velasco",
+          "url": "https://felixvelas.co",
+          "jobTitle": "Trust Architect & Digital Archaeologist",
+          "affiliation": { "@id": "https://unearth.im/#organization" },
+          "sameAs": ["https://www.linkedin.com/in/felix-velasco-b793015"]
         }
-      }
+      ]
     }
     </script>
+
+    <!-- === 1. Primary Meta Tags === -->
+    <title>Unearth Constellation Hub | Directory of Digital Monuments</title>
+    <meta name="title" content="Unearth Constellation Hub | Directory of Digital Monuments">
+    <meta name="description" content="The authoritative directory for the Unearth Heritage Foundry constellation. A navigational nexus mapping the digital strata of our distributed knowledge graph.">
+    <meta name="keywords" content="digital archaeology, knowledge graph, unearth foundry, digital monuments, philosophical archives, trust architecture, distributed museum">
+    <meta name="author" content="unearth.click (by unearth heritage foundry - archive & anvil - unearth.im)">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    
+    <!-- === Canonical Link === -->
+    <link rel="canonical" href="https://unearth.click/" />
+    
+    <!-- === 2. Webmention Endpoint === -->
+    <link rel="webmention" href="https://webmention.io/unearth.im/webmention" />
+
+    <!-- === 3. Open Graph / Facebook === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://unearth.click/">
+    <meta property="og:title" content="Unearth Constellation Hub | Directory of Digital Monuments">
+    <meta property="og:description" content="The authoritative directory for the Unearth Heritage Foundry constellation. A navigational nexus mapping the digital strata of our distributed knowledge graph.">
+    <meta property="og:image" content="https://unearth.click/og-image.png">
+    <meta property="og:site_name" content="Unearth Constellation Hub">
+
+    <!-- === 4. Twitter Card === -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://unearth.click/">
+    <meta property="twitter:title" content="Unearth Constellation Hub | Directory of Digital Monuments">
+    <meta property="twitter:description" content="The authoritative directory for the Unearth Heritage Foundry constellation. A navigational nexus mapping the digital strata of our distributed knowledge graph.">
+    <meta property="twitter:image" content="https://unearth.click/og-image.png">
+
+    <!-- === 5. Favicons === -->
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="alternate icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- === Brand Color Meta Tags === -->
+    <meta name="theme-color" content="#0A0E1B">
+    <meta name="msapplication-TileColor" content="#FF8A00">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lora:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        /* UNEARTH.IM v4.1 Palettes
+        */
+        :root {
+            --deep-navy: #0A0E1B;      /* Night (Background) */
+            --navy-card: #1D2434;      /* UI Elevation */
+            --parchment: #F8F7F4;      /* Paper (Main Text) */
+            --luminous-ember: #FF8A00; /* Fire (Primary Accent) */
+            --antique-gold: #A1824A;   /* Relic (Secondary Accent) */
+            --light-blue: #90cdf4;     /* Sky (HUD Accent) */
+            --stone-medium: #8E8E8E;   /* Greyscale (Metadata) */
+        }
+
+        /* Base Body & Layout */
+        body {
+            background-color: var(--deep-navy);
+            color: var(--parchment);
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            box-sizing: border-box;
+        }
+
+        /* Stratigraphic HUD */
+        .hud {
+            position: fixed;
+            top: 1.5rem;
+            right: 1.5rem;
+            font-family: monospace;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15rem;
+            color: var(--light-blue);
+            border: 1px solid rgba(144, 205, 244, 0.2);
+            padding: 0.6rem 1rem;
+            background: rgba(10, 14, 27, 0.9);
+            backdrop-filter: blur(8px);
+            z-index: 100;
+        }
+
+        /* Header Architecture */
+        header {
+            max-width: 800px;
+            margin: 0 auto 4rem auto;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 700;
+        }
+
+        /* Brand Colors: Parchment & Ember */
+        .unearth-text { color: var(--parchment); }
+        .im-text { color: var(--luminous-ember); text-shadow: 0 0 20px rgba(255, 138, 0, 0.25); }
+
+        .tagline {
+            color: var(--stone-medium);
+            font-size: 0.8rem;
+            margin-top: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2rem;
+        }
+
+        /* Navigation & Nodes */
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .node {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            color: inherit;
+            border-left: 1px solid rgba(142, 142, 142, 0.2);
+            padding: 0.75rem 0 0.75rem 1.5rem;
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .node:hover {
+            border-left-color: var(--luminous-ember);
+            background: rgba(255, 138, 0, 0.04);
+            transform: translateX(10px);
+        }
+
+        .node-domain {
+            font-weight: 700;
+            font-size: 1.3rem;
+            letter-spacing: 0.05rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .node-desc {
+            font-size: 0.9rem;
+            color: var(--stone-medium);
+            margin-top: 0.4rem;
+            font-family: 'Lora', serif; /* Narrative tone */
+            font-style: italic;
+        }
+
+        /* Status Pills */
+        .status-pill {
+            font-size: 9px;
+            padding: 2px 8px;
+            border-radius: 2px;
+            font-weight: 700;
+            margin-left: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05rem;
+        }
+
+        .status-active { 
+            background: rgba(255, 138, 0, 0.1); 
+            color: var(--luminous-ember); 
+            border: 1px solid rgba(255, 138, 0, 0.3); 
+        }
+
+        .status-excavating { 
+            background: rgba(161, 130, 74, 0.1); 
+            color: var(--antique-gold); 
+            border: 1px solid rgba(161, 130, 74, 0.3); 
+        }
+
+        /* Footer Architecture: Balanced Symmetry */
+        footer {
+            margin: auto auto 0 auto;
+            padding-top: 6rem;
+            max-width: 800px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between; /* Motto on Left, Credit on Right */
+            align-items: baseline;        /* Parallel horizontal alignment */
+            border-top: 1px solid rgba(142, 142, 142, 0.1);
+        }
+
+        .footer-motto {
+            font-family: 'Lora', serif;
+            font-style: italic;
+            color: var(--luminous-ember);
+            font-size: 1.25rem;
+            letter-spacing: 0.05rem;
+        }
+
+        .credit-block {
+            text-align: right;
+            font-family: 'Inter', sans-serif;
+            color: rgba(248, 247, 244, 0.25); /* Subtle ghosted opacity */
+            font-size: 0.65rem;
+            line-height: 1.6;
+            letter-spacing: 0.03rem;
+            transition: color 0.5s ease;
+        }
+
+        .credit-block b {
+            font-weight: 700;
+        }
+
+        .credit-block a {
+            color: rgba(248, 247, 244, 0.4);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .credit-block:hover {
+            color: rgba(248, 247, 244, 0.5);
+        }
+
+        .credit-block a:hover {
+            color: var(--parchment);
+            text-decoration: underline;
+        }
+
+        /* Mobile Optimization */
+        @media (max-width: 768px) {
+            body { padding: 3rem 1.5rem; }
+            h1 { font-size: 1.8rem; }
+            footer { flex-direction: column; gap: 2rem; align-items: flex-start; }
+            .credit-block { text-align: left; }
+        }
+    </style>
 </head>
-<body class="bg-background text-text font-serif antialiased">
+<body>
 
-    <div class="relative min-h-screen flex flex-col justify-center items-center overflow-hidden py-24 px-4 sm:px-6 lg:px-8">
+    <div class="hud">Location: [ 0m — SURFACE ]</div>
+
+    <header>
+        <h1><span class="unearth-text">UNEARTH</span><span class="im-text">.IM</span></h1>
+        <div class="tagline">The Constellation Directory // Foundry Blueprint 4.1</div>
+    </header>
+
+    <nav>
+        <a href="https://unearth.im" class="node">
+            <div class="node-domain">unearth.im <span class="status-pill status-active">Mothership</span></div>
+            <div class="node-desc">Heritage Foundry & Trust Architecture. The core anvil.</div>
+        </a>
+
+        <a href="https://unearth.page" class="node">
+            <div class="node-domain">unearth.page <span class="status-pill status-active">Manifesto</span></div>
+            <div class="node-desc">The Soul of the Web. Our core philosophical declaration.</div>
+        </a>
+
+        <a href="https://unearth.wiki" class="node">
+            <div class="node-domain">unearth.wiki <span class="status-pill status-active">Knowledge</span></div>
+            <div class="node-desc">The Great Library of Archaeobytology.</div>
+        </a>
+
+        <a href="https://unearth.works" class="node">
+            <div class="node-domain">unearth.works <span class="status-pill status-active">Works</span></div>
+            <div class="node-desc">Strategic Advisory, Domain Stewardship & Global Consulting.</div>
+        </a>
+
+        <a href="https://unearth.site" class="node">
+            <div class="node-domain">unearth.site <span class="status-pill status-active">Gallery</span></div>
+            <div class="node-desc">Museum of Digital Archaeology. Interactive Monuments.</div>
+        </a>
+
+        <a href="https://unearth.ink" class="node">
+            <div class="node-domain">unearth.ink <span class="status-pill status-active">Library</span></div>
+            <div class="node-desc">The Newspaper. Narrative dispatches and editorial records.</div>
+        </a>
+
+        <a href="https://unearth.fyi" class="node">
+            <div class="node-domain">unearth.fyi <span class="status-pill status-active">Pulse</span></div>
+            <div class="node-desc">Real-time stratigraphic updates and project logs.</div>
+        </a>
+
+        <div class="node" style="opacity: 0.4;">
+            <div class="node-domain">unearth.land <span class="status-pill status-excavating">Excavating</span></div>
+            <div class="node-desc">Spatial Registry. Mapping the physical ground of the web.</div>
+        </div>
         
-        <!-- Main Content -->
-        <main class="text-center max-w-3xl mx-auto" role="main">
-            
-            <section>
-                
-                <!-- 
-                  Narrative Element: Uses font-serif (Lora)
-                  - Applied text-accent-primary (Burnt Sienna) to the ".click"
-                -->
-                <h1 class="text-5xl md:text-7xl font-medium tracking-tight text-text">
-                    unearth<span class="text-accent-primary">.click</span>
-                </h1>
-                
-                <!-- Narrative Element: Uses font-serif (Lora) -->
-                <article class="mt-8 text-lg md:text-xl leading-relaxed text-text/90 max-w-2xl mx-auto space-y-6">
-                    <p>
-                        A link is a promise. A click is an act of trust.
-                    </p>
-                    <p>
-                        This one is simple.
-                    </p>
-                </article>
+        <div class="node" style="opacity: 0.4;">
+            <div class="node-domain">unearth.cv <span class="status-pill status-excavating">Excavating</span></div>
+            <div class="node-desc">Professional Ledger. Verifiable provenance for the foundry.</div>
+        </div>
+    </nav>
 
-                <div class="mt-12">
-                    <!-- UI Element: Uses font-sans (Inter) and accent-primary -->
-                    <a href="https://unearth.im"
-                       class="font-sans py-3 px-8 bg-accent-primary text-white font-semibold rounded-lg shadow-md hover:bg-accent-primary/90 focus:outline-none focus:ring-2 focus:ring-accent-primary focus:ring-offset-2 focus:ring-offset-background transition-all"
-                       aria-label="Click to visit unearth.im">
-                        click me
-                    </a>
-                </div>
-            </section>
+    <footer>
+        <div class="footer-motto">Story, grounded.</div>
         
-        </main>
-
-        <!-- Footer -->
-        <footer class="absolute bottom-0 w-full py-12 px-4 sm:px-6 lg:px-8">
-            <div class="max-w-7xl mx-auto text-center">
-                <!-- UPDATED FOOTER: Links added, font-sans, text-base, .im is Burnt Sienna -->
-                <p class="font-sans text-base text-text/60">
-                    &copy; 2025 <a href="https://unearth.im" class="hover:text-accent-primary transition-colors" target="_blank" rel="noopener">unearth<span class="text-accent-primary">.im</span></a> &ndash; <a href="https://unearth.im/fieldnotes/post/lexicon-archive-and-anvil" target="_blank" rel="noopener" class="hover:text-accent-primary transition-colors">Archive &amp; Anvil</a>
-                </p>
-            </div>
-        </footer>
-    </div>
+        <small class="credit-block">
+            a <b><a href="https://sentientification.com" target="_blank" rel="noopener noreferrer">liminal mind meld</a></b> collaboration<br>
+            <b><a href="https://unearth.im" target="_blank" rel="noopener noreferrer">unearth heritage foundry</a></b> | <b><a href="https://archaeobytology.org" target="_blank" rel="noopener noreferrer">archive & anvil</a></b>
+        </small>
+    </footer>
 
 </body>
 </html>
-

@@ -1,0 +1,22 @@
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="32" height="32" fill="#0A0E1B" rx="4"/>
+  
+  <!-- Stylized "U" with archaeological layers -->
+  <path d="M 8 8 L 8 18 Q 8 24 16 24 Q 24 24 24 18 L 24 8" 
+        fill="none" 
+        stroke="#FF8A00" 
+        stroke-width="2.5" 
+        stroke-linecap="round"/>
+  
+  <!-- Inner accent line (strata layer) -->
+  <path d="M 10 10 L 10 18 Q 10 22 16 22 Q 22 22 22 18 L 22 10" 
+        fill="none" 
+        stroke="#90cdf4" 
+        stroke-width="1" 
+        stroke-linecap="round"
+        opacity="0.6"/>
+  
+  <!-- Small dot accent (archaeological marker) -->
+  <circle cx="16" cy="26" r="1.5" fill="#A1824A"/>
+</svg>
